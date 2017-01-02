@@ -4,6 +4,12 @@ Documentation for `PhyloNetworks`'s public (exported) interface.
 
 See [Internal Documentation](@ref) for documentation on internal functions.
 
+```@meta
+DocTestSetup = quote
+    using PhyloNetworks
+end
+```
+
 ## Contents
 
 ```@contents
@@ -22,6 +28,10 @@ Pages = ["public.md"]
 HybridNetwork
 DataCF
 Quartet
+ParamsBM
+TraitSimulation
+PhyloNetworkLinearModel
+ReconstructedStates
 ```
 
 ## Utilities
@@ -45,6 +55,7 @@ deleteHybridThreshold!
 # plotNetGraphViz
 plot
 rotate!
+getindex(::TraitSimulation, ::Symbol)
 ```
 
 ## Data and Topology read/write
@@ -88,4 +99,23 @@ treeEdgesBootstrap
 # hybridDetection
 # summarizeHFdf
 hybridBootstrapSupport
+```
+
+## Trait Evolution
+
+```@docs
+simulate
+phyloNetworklm
+sigma2_estim
+mu_estim
+lambda_estim
+ancestralStateReconstruction
+expectations
+predint
+expectationsPlot
+predintPlot
+```
+
+```@meta
+DocTestSetup = nothing
 ```

@@ -1,4 +1,4 @@
-VERSION >= v"0.4" || warn("you need to update Julia to current version: 0.4 or higher")
+VERSION >= v"0.5" || warn("you need to update Julia to current version: 0.5 or higher")
 __precompile__()
 
 module PhyloNetworks
@@ -74,7 +74,22 @@ writeMultiTopology,
 readMultiTopologyLevel1,
 readMultiTopology,
 hybridatnode!,
-undirectedOtherNetworks
+undirectedOtherNetworks,
+phyloNetworklm,
+PhyloNetworkLinearModel,
+simulate,
+TraitSimulation,
+ParamsBM,
+sharedPathMatrix,
+ancestralStateReconstruction,
+ReconstructedStates,
+sigma2_estim,
+mu_estim,
+lambda_estim,
+expectations,
+expectationsPlot,
+predint,
+predintPlot
 
 # export part
 
